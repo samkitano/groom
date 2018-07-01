@@ -1,0 +1,70 @@
+{
+  "name": "groom",
+  "description": "A simple CMS with an Admin panel built with Vue",
+  "version": "0.0.1",
+  "private": true,
+  "author": {
+    "name": "Sam Kitano",
+    "email": "sam.kitano@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/samkitano/groom.git"
+  },
+  "scripts": {
+    "dev": "npm run development",
+    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch-poll": "npm run watch -- --watch-poll",
+    "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "prod": "npm run production",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "node": true,
+      "commonjs": true,
+      "es6": true
+    },
+    "extends": "standard",
+    "parserOptions": {
+      "sourceType": "module"
+    }
+  },
+  "devDependencies": {
+    "@tinymce/tinymce-vue": "^1.0.6",
+    "animate.css": "^3.6.1",
+    "axios": "^0.18",
+    "babel-polyfill": "^6.26.0",
+    "bootstrap": "^4.0.0",
+    "bootstrap-vue": "^2.0.0-rc.6",
+    "cross-env": "^5.1",
+    "eslint": "^4.19.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-friendly-formatter": "^4.0.1",
+    "eslint-loader": "^2.0.0",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.7.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "eslint-plugin-vue": "^4.4.0",
+    "gsap": "^1.20.4",
+    "jquery": "^3.2",
+    "laravel-mix": "^2.0",
+    "laravel-mix-purgecss": "^2.0.0",
+    "lodash": "^4.17.4",
+    "popper.js": "^1.12",
+    "sortablejs": "^1.7.0",
+    "sweetalert2": "^7.18.0",
+    "tinymce": "^4.7.11",
+    "vue": "^2.5.7",
+    "vue-form-wizard": "^0.8.4",
+    "vue-router": "^3.0.1",
+    "vue-sweetalert2": "^1.2.4",
+    "vue2-dropzone": "^3.2.2",
+    "vue2-transitions": "^0.2.3",
+    "vuex": "^3.0.1"
+  },
+  "dependencies": {}
+}

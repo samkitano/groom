@@ -1,0 +1,137 @@
+body
+  //-webkit-user-select: none
+  //-moz-user-select: none
+  //-ms-user-select: none
+  //user-select: none
+
+.listed-service, .app-top, .app-intro
+  border: 2px solid #EEE
+
+
+// TOP - HERO
+.app-top
+  height: 100vh
+  display: flex
+  justify-content: center
+  align-items: center
+
+  .app-brand
+    color: #2ba77b
+    svg
+      display: block
+      margin-left: auto
+      margin-right: auto
+      height: 24rem
+    h1, h2
+      text-align: center
+      .skew
+        display: inline-block
+        animation: skew_txt .8s
+      .dot
+        color: #1b1e21
+
+// INTRO
+.app-module
+  width: 100%
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  text-align: center
+  min-height: 300px
+  padding: 1rem 2rem
+  background-color: #2ba77b
+  color: lighten(#2ba77b, 50%)
+  p
+    font-size: 1.5rem
+
+.app-footer
+  height: 300px
+  display: flex
+  justify-content: center
+  align-items: center
+  a
+    text-transform: uppercase
+
+// SERVICES
+.app-services-list
+  width: 100%
+  display: block
+
+.goto-page
+  color: lighten(#2ba77b, 50%)
+  text-decoration: none
+  &:hover
+    color: lighten(#2ba77b, 50%)
+    .service-text h2
+      color: darken(#2ba77b, 10%)
+  .listed-service
+    text-align: center
+    width: 49.9%
+    display: inline-block
+    vertical-align: top
+    float: left
+    height: 350px
+    overflow: hidden
+    &:hover
+      .service
+        -webkit-transform: scale(1.05)
+        -moz-transform: scale(1.05)
+        -ms-transform: scale(1.05)
+        -o-transform: scale(1.05)
+        transform: scale(1.05)
+
+    .service
+      width: 100%
+      height: 100%
+      display: flex
+      justify-content: center
+      align-items: center
+      flex-direction: column
+      transition: all .4s
+      z-index: 1
+      padding: 1rem 2rem
+      .service-text
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 1)
+
+// MEDIA QUERIES
+@media (max-width: 576px)
+  .app-top .app-brand h1
+    font-size: 4rem
+  .listed-service
+    width: 100%
+
+@media (min-width: 577px)
+  .app-top .app-brand h1
+    font-size: 6rem
+
+@media (min-width: 992px)
+  .app-top .app-brand h1
+    font-size: 8rem
+
+@media (min-width: 1200px)
+  .app-top .app-brand h1
+    font-size: 10rem
+
+// ANIMATIONS
+@keyframes skew_txt
+  from
+    transform: skewX(-20deg)
+    -moz-transform: skewX(-20deg)
+    -ms-transform: skewX(-20deg)
+  to
+    transform: skewX(0deg)
+    -moz-transform: skewX(0deg)
+    -ms-transform: skewX(0deg)
+
+// TRANSITIONS
+a,
+.service-text h2,
+.native
+button,
+.button
+  -webkit-transition: all 0.3s ease-out
+  -moz-transition: all 0.3s ease-out
+  -ms-transition: all 0.3s ease-out
+  -o-transition: all 0.3s ease-out
+  transition: all 0.3s ease-out

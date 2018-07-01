@@ -1,0 +1,65 @@
+a,
+button,
+.button
+  -webkit-transition: all 0.3s ease-out
+  -moz-transition: all 0.3s ease-out
+  -ms-transition: all 0.3s ease-out
+  -o-transition: all 0.3s ease-out
+  transition: all 0.3s ease-out
+
+[draggable]
+  -webkit-transition: all 0.2s ease
+  -moz-transition: all 0.2s ease
+  -ms-transition: all 0.2s ease
+  -o-transition: all 0.2s ease
+  transition: all 0.2s ease
+
+[draggable=true]
+  -webkit-transform: scale(1.02)
+  -moz-transform: scale(1.02)
+  -ms-transform: scale(1.02)
+  -o-transform: scale(1.02)
+  transform: scale(1.02)
+
+@keyframes loading
+  0%
+    transform: rotate(0)
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19)
+  50%
+    transform: rotate(900deg)
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1)
+  100%
+    transform: rotate(1800deg)
+
+
+@-webkit-keyframes gradder
+  0%
+    background-position: 0% 51%
+  50%
+    background-position: 100% 50%
+  100%
+    background-position: 0% 51%
+
+@-moz-keyframes gradder
+  0%
+    background-position: 0% 51%
+  50%
+    background-position: 100% 50%
+  100%
+    background-position: 0% 51%
+
+@-o-keyframes gradder
+  0%
+    background-position: 0% 51%
+  50%
+    background-position: 100% 50%
+  100%
+    background-position: 0% 51%
+
+@keyframes gradder
+  0%
+    background-position: 0% 51%
+  50%
+    background-position: 100% 50%
+  100%
+    background-position: 0% 51%

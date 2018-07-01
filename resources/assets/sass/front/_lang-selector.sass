@@ -1,0 +1,42 @@
+.lang-trigger:not(.open):hover
+  img
+    -webkit-transform: scale(1.1)
+    -moz-transform: scale(1.1)
+    -ms-transform: scale(1.1)
+    -o-transform: scale(1.1)
+    transform: scale(1.1)
+
+.lang-trigger.open
+  cursor: default
+
+.lang-selector
+  padding: 1rem
+  position: fixed
+  top: 0
+  right: -8rem
+  z-index: 20
+
+  .langs .current-lang a
+    text-decoration: none
+    color: inherit
+    &:hover
+      color: inherit
+    span
+      margin-left: .5rem
+
+  .lang-choices
+    margin-left: 2rem
+    display: flex
+    flex-direction: column
+    a
+      min-width: 7rem
+      &:hover
+        text-decoration: none
+      span
+        margin-left: .5rem
+        display: flex
+        align-items: center
+        span
+          color: #333
+          &:hover
+            color: #2ba77b
